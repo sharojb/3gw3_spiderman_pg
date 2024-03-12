@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5477549YWN"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5477549YWN');
+    </script>
+
+    <!--FAVicon-->
+    <link rel="shortcut icon" href="images/favicon/logo5.ico" type="img/ico" />
+    
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="indexstyle.css">
+    <link href="lightbox/src/css/lightbox.css" rel="stylesheet" />
+
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/scripts.js" type="text/javacript"></script>
+
+
+    <title>Contact Us</title>
+
+  </head>
+  <body>
+    <header>
+      <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><img class="img5" src="images/logo5.png" alt=""></li>
+            <li><a href="spiderman.html">Spider-Man</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="form.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="h1">
+        <h1>Join The Fandom</h1>
+    </div>
+    <div class="hero-container1">
+      <img src="images/meme.png" alt="">
+    </div>
+    
+
+  <!-- Form -->
+    <div class="text">
+        <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+        
+          <div class="first-name input-section">
+            <label for="firstname" class="label_input_wrap">First Name:</label>
+            <input type="text" name="req_firstname" id="firstname" placeholder="ex. Mary"/>
+            <img class="spid" src="images/logo5.png" alt="">
+          </div>
+
+          <div class="last-name input-section">
+            <label for="lastname" class="label_input_wrap">Last Name:</label>
+            <input type="text" name="req_lastname" id="lastname" placeholder="ex. Garcia"/>    
+          </div>
+
+          <div class="email input-section">
+            <label for="email" class="label_input_wrap">Email:</label>
+            <input type="email" name="req_email" id="email" placeholder="mgarcia@example.com"/>
+          </div>
+
+          <div class="telephone input-section">
+            <label for="telephone" class="label_input_wrap">Telephone:</label>
+            <input type="tel" name="req_telephone" id="telephone" placeholder="555-444-3333" />
+          </div>
+
+          <div class="comments input-section">
+              <label for="comments" class="label_input_wrap com">Comments:</label>
+              <textarea name="comments" id="comments" placeholder="Your Comment Goes Here" cols="35" rows="3"></textarea>
+          </div>
+
+          <div class="checkbox input-section">
+              <h3 class="in">Favorite Movie:</h3>
+              <input type="checkbox" name="req_interest" value="design" id="design" /><label for="design"> The Amazing Spider-Man</label>
+              <input type="checkbox" name="req_interest" value="psy" id="psy" /><label for="psy"> Spider-Man: Far From Home</label>
+              <input type="checkbox" name="req_interest" value="co" id="co" /><label for="co"> Spider-Man</label>
+          </div>
+
+          <div class="dropdown input-section">
+            <label for="refer" class="label_input_wrap">How did you hear about us?</label>
+              <select name="req_refer" id="refer">
+                <option value="reference">Reference</option>
+                <option value="sm">Social Media</option>
+                <option value="search">Google Search</option>
+              </select>
+          </div>
+
+          <div class="reset">
+            <input type="reset" value="Clear"/>
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Send"/>
+          </div>
+
+        </form>
+        
+        <section class="gallery">
+          <a href="images/meme1.jpg" data-lightbox="image-1" data-title="Meme"><img src="images/meme1.jpg" alt="Meme1" title="Meme"></a>
+          <a href="images/meme2.png" data-lightbox="image-1" data-title="Meme"><img src="images/meme2.png" alt="Meme2" title="Meme"></a>
+        </section>
+    </div>
+
+    
+      
+    
+    <script src="responsiveslides.min.js"></script>
+
+    </main>
+
+    <footer> 
+      <p>Website by Spidey Community &copy;</p>
+    </footer>
+    <script src="lightbox/src/js/lightbox.js"></script>
+  </body>
+</html>
